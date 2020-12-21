@@ -7,10 +7,9 @@
         </ion-header>
         <ion-content>
             <ion-list>
-                <ion-item>Samson</ion-item>
-                <ion-item>Sodiq</ion-item>
-                <ion-item>Hammed</ion-item>
-                <ion-item>Ramon</ion-item>
+                <ion-item>A trip into the mountains</ion-item>
+                <ion-item>Watching Apocalypto</ion-item>
+                <ion-item>Going for Adventure</ion-item>
             </ion-list>
         </ion-content>
     </ion-page>
