@@ -2,7 +2,10 @@
     <ion-page>
         <ion-header>
             <ion-toolbar>
-                <ion-title>{{ pageTitle }} </ion-title>
+                <ion-buttons slot="start">
+                    <ion-back-button></ion-back-button>
+                    <ion-title>{{ pageTitle }} </ion-title>
+                </ion-buttons>
             </ion-toolbar>
         </ion-header>
         <ion-content>
@@ -18,7 +21,9 @@ import
         IonHeader, 
         IonToolbar, 
         IonTitle, 
-        IonContent
+        IonContent,
+        IonBackButton,
+        IonButtons
     } from '@ionic/vue';
 export default {
     props: [ 'pageTitle' ],
@@ -27,7 +32,9 @@ export default {
         IonHeader,
         IonToolbar,
         IonTitle,
-        IonContent
+        IonContent,
+        IonBackButton,
+        IonButtons
     }
 }
 </script>
