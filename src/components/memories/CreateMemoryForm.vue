@@ -6,8 +6,13 @@
                 <ion-input type="text" required v-model="enteredTitle" />
             </ion-item>
             <ion-item>
-                <ion-label position="floating">Image URL</ion-label>
-                <ion-input type="url" required v-model="enteredImageUrl" />
+                <ion-thumbnail slot="start">
+                    <img src="" alt="">
+                </ion-thumbnail>
+                <ion-button>
+                    <ion-icon></ion-icon>
+                    Take Photo
+                </ion-button>
             </ion-item>
             <ion-item>
                 <ion-label position="floating">Description</ion-label>
@@ -19,7 +24,9 @@
 </template>
 
 <script>
-import { IonList, IonItem, IonLabel, IonInput, IonTextarea, IonButton } from "@ionic/vue";
+import { IonList, IonItem, IonLabel, IonInput, IonTextarea, IonButton, IonThumbnail, IonIcon } from "@ionic/vue";
+
+import {}
 
 export default {
     emit: ['save-memory'],
@@ -29,7 +36,9 @@ export default {
         IonLabel,
         IonInput, 
         IonTextarea,
-        IonButton
+        IonButton,
+        IonThumbnail,
+        IonIcon
     },
     data() {
         return {
