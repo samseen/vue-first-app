@@ -1,6 +1,6 @@
 {
-  "appId": "io.ionic.starter",
-  "appName": "vue-first-app",
+  "appId": "com.ghscpsm.memories",
+  "appName": "VueMemories",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "dist",
