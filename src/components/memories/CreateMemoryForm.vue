@@ -9,8 +9,8 @@
                 <ion-thumbnail slot="start">
                     <img src="" alt="">
                 </ion-thumbnail>
-                <ion-button>
-                    <ion-icon></ion-icon>
+                <ion-button type="button" fill="clear" @click="takePhoto">
+                    <ion-icon slot="start" :icon="camera"></ion-icon>
                     Take Photo
                 </ion-button>
             </ion-item>
@@ -26,7 +26,7 @@
 <script>
 import { IonList, IonItem, IonLabel, IonInput, IonTextarea, IonButton, IonThumbnail, IonIcon } from "@ionic/vue";
 
-import {}
+import { camera } from 'ionicons/icons'
 
 export default {
     emit: ['save-memory'],
@@ -44,10 +44,12 @@ export default {
         return {
             enteredTitle: '',
             enteredImageUrl: '',
-            enteredDescription: ''
+            enteredDescription: '',
+            camera
         };
     },
     methods: {
+        takePhoto() {},
         submitForm() {
             const memoryData = {
                 title: this.enteredTitle,
